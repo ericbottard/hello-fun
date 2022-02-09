@@ -28,6 +28,7 @@ accelerator:
     label: The source repository prefix to use when pushing the source
     description: The prefix for the repository where source can be stored during development
     defaultValue: dev.local
+    validationRegex: '^[a-z\.]+$'
     dependsOn:
       name: deploymentType
       value: workload
